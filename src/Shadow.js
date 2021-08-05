@@ -15,14 +15,22 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     width: 200,
     height: 200,
-    shadowColor: '#000000',
-    shadowOffset: {
-      width: 10,
-      height: 10,
-    },
-    shadowOpacity: 0.5,
-    shadowRadius: 10,
-    elevation: 20, // 안드로이드를 위해
+    ...Platform.select({
+      ios: {
+        backgroundColor: 'blue',
+        shadowColor: '#000000',
+        shadowOffset: {
+          width: 10,
+          height: 10,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+      },
+      android: {
+        backgroundColor: 'green',
+        elevation: 20, // 안드로이드를 위해
+      },
+    }),
   },
 });
 
