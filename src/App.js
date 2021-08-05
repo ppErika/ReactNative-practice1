@@ -10,8 +10,8 @@ export default function App() {
     <View style={styles.container}>
       <Text style={{fontSize: 20}}>{addition}</Text>
       <Text style={{fontSize: 20}}>{multiple}</Text>
-      <MyButton title="addition" onPress={() => setAddition(addition + 2)} />
-      <MyButton title="multiple" onPress={() => setmultiple(multiple * 2)} />
+      <MyButton title="addition" onPress={()=>setAddition(addition+2)}/>
+      <MyButton title="multiple" onPress={()=>setmultiple(multiple*2)}/>
     </View>
   );
 }
