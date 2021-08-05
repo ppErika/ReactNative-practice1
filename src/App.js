@@ -1,13 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import Box from './Box';
+import {StyleSheet, View} from 'react-native';
+import Shadow from './Shadow';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Box style={{backgroundColor: 'red', height: 100}} />
-      <Box style={{backgroundColor: 'green', flex: 2}} />
-      <Box style={{backgroundColor: 'blue', flex: 1}} />
+      <Shadow />
     </View>
   );
 }
