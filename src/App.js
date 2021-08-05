@@ -1,22 +1,17 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
-import {StyleSheet, View} from 'react-native';
-
+import React, {useState} from 'react';
+import {StyleSheet, View, Text} from 'react-native';
 import MyButton from './MyButton';
 
 export default function App() {
+  const [addition, setAddition] = useState(0);
+  const [multiple, setmultiple] = useState(1);
+
   return (
     <View style={styles.container}>
-      <MyButton title={123} onPress={ ()=>alert('1') }/>
-      <MyButton title="MyButton title2" onPress={ ()=>alert('2') }>MyButton3</MyButton>
-      <MyButton>Children</MyButton>
+      <Text style={{fontSize: 20}}>{addition}</Text>
+      <Text style={{fontSize: 20}}>{multiple}</Text>
+      <MyButton title="addition" onPress={()=>setAddition(addition+2)}/>
+      <MyButton title="multiple" onPress={()=>setmultiple(multiple*2)}/>
     </View>
   );
 }
