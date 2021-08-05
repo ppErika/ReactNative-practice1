@@ -7,17 +7,16 @@
  */
 
 import React from 'react';
-import {StyleSheet, View, Text, Button, StatusBar} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 import MyButton from './MyButton';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open</Text>
-      <StatusBar style="auto" />
-      <Button title="Button" onPress={() => alert('Click!!')} />
-      <MyButton />
+      <MyButton title="MyButton title1" onPress={ ()=>alert('1') }/>
+      <MyButton title="MyButton title2" onPress={ ()=>alert('2') }>MyButton3</MyButton>
+      <MyButton>Children</MyButton>
     </View>
   );
 }
