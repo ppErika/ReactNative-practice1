@@ -13,7 +13,8 @@
     "prop-types": "^15.7.2",
     "react": "16.11.0",
     "react-native": "0.62.0",
-    "react-native-material-design": "^0.3.7"
+    "react-native-material-design": "^0.3.7",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
