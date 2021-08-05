@@ -12,6 +12,7 @@ const Container = styled.View`
 export default function App() {
   return (
     <Container>
+      <Input placeholder="Type a message..." />
       <Input />
     </Container>
   );
