@@ -14,7 +14,7 @@ import MyButton from './MyButton';
 export default function App() {
   return (
     <View style={styles.container}>
-      <MyButton title="MyButton title1" onPress={ ()=>alert('1') }/>
+      <MyButton title={123} onPress={ ()=>alert('1') }/>
       <MyButton title="MyButton title2" onPress={ ()=>alert('2') }>MyButton3</MyButton>
       <MyButton>Children</MyButton>
     </View>
